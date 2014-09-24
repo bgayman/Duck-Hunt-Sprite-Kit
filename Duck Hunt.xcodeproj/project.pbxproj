@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88671D6B192EBDA900B62EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D6A192EBDA900B62EDE /* Foundation.framework */; };
+		88671D6D192EBDA900B62EDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D6C192EBDA900B62EDE /* CoreGraphics.framework */; };
+		88671D6F192EBDA900B62EDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D6E192EBDA900B62EDE /* UIKit.framework */; };
+		88671D71192EBDA900B62EDE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D70192EBDA900B62EDE /* SpriteKit.framework */; };
+		88671D77192EBDA900B62EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88671D75192EBDA900B62EDE /* InfoPlist.strings */; };
+		88671D79192EBDA900B62EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671D78192EBDA900B62EDE /* main.m */; };
+		88671D7D192EBDA900B62EDE /* DuckHuntAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671D7C192EBDA900B62EDE /* DuckHuntAppDelegate.m */; };
+		88671D80192EBDAA00B62EDE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88671D7E192EBDAA00B62EDE /* Main_iPhone.storyboard */; };
+		88671D83192EBDAA00B62EDE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88671D81192EBDAA00B62EDE /* Main_iPad.storyboard */; };
+		88671D86192EBDAA00B62EDE /* DuckHuntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671D85192EBDAA00B62EDE /* DuckHuntViewController.m */; };
+		88671D89192EBDAA00B62EDE /* DuckHuntMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671D88192EBDAA00B62EDE /* DuckHuntMyScene.m */; };
+		88671D8B192EBDAA00B62EDE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 88671D8A192EBDAA00B62EDE /* Spaceship.png */; };
+		88671D8D192EBDAA00B62EDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88671D8C192EBDAA00B62EDE /* Images.xcassets */; };
+		88671D94192EBDAA00B62EDE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D93192EBDAA00B62EDE /* XCTest.framework */; };
+		88671D95192EBDAA00B62EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D6A192EBDA900B62EDE /* Foundation.framework */; };
+		88671D96192EBDAA00B62EDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671D6E192EBDA900B62EDE /* UIKit.framework */; };
+		88671D9E192EBDAB00B62EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88671D9C192EBDAB00B62EDE /* InfoPlist.strings */; };
+		88671DA0192EBDAB00B62EDE /* Duck_HuntTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671D9F192EBDAB00B62EDE /* Duck_HuntTests.m */; };
+		88671DAB192EC3C900B62EDE /* DuckHuntGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671DAA192EC3C900B62EDE /* DuckHuntGame.m */; };
+		88671DAE192EC43000B62EDE /* DuckHuntLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671DAD192EC43000B62EDE /* DuckHuntLevel.m */; };
+		88671DB1192ED2AA00B62EDE /* DuckHuntDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671DB0192ED2AA00B62EDE /* DuckHuntDog.m */; };
+		88671DB3192ED77200B62EDE /* dogSniff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88671DB2192ED77200B62EDE /* dogSniff.atlas */; };
+		88671DB5192EE03A00B62EDE /* dogJump.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88671DB4192EE03A00B62EDE /* dogJump.atlas */; };
+		88671DB7192EF02900B62EDE /* duck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88671DB6192EF02900B62EDE /* duck.atlas */; };
+		88671DBA192EF55500B62EDE /* DuckHuntDuck.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671DB9192EF55500B62EDE /* DuckHuntDuck.m */; };
+		88671DBD192F7FFB00B62EDE /* otherDuck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88671DBC192F7FFB00B62EDE /* otherDuck.atlas */; };
+		88CB8FB61932D859008DBBB6 /* DuckHuntBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CB8FB51932D859008DBBB6 /* DuckHuntBullet.m */; };
+		88CB8FB81933FDD8008DBBB6 /* dogDuck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FB71933FDD8008DBBB6 /* dogDuck.atlas */; };
+		88CB8FBB1935046D008DBBB6 /* DuckHuntStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CB8FBA1935046D008DBBB6 /* DuckHuntStartScene.m */; };
+		88CB8FBE1935048A008DBBB6 /* DuckHuntGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CB8FBD1935048A008DBBB6 /* DuckHuntGameOverScene.m */; };
+		88CB8FC11935122F008DBBB6 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FBF1935122F008DBBB6 /* start.mp3 */; };
+		88CB8FC21935122F008DBBB6 /* shot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FC01935122F008DBBB6 /* shot.wav */; };
+		88CB8FC41935123B008DBBB6 /* bark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FC31935123B008DBBB6 /* bark.mp3 */; };
+		88CB8FC819351247008DBBB6 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FC519351247008DBBB6 /* end.mp3 */; };
+		88CB8FC919351247008DBBB6 /* duck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FC619351247008DBBB6 /* duck.mp3 */; };
+		88CB8FCA19351247008DBBB6 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FC719351247008DBBB6 /* drop.mp3 */; };
+		88CB8FCC19351255008DBBB6 /* laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CB8FCB19351255008DBBB6 /* laugh.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88671D97192EBDAA00B62EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88671D5F192EBDA800B62EDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88671D66192EBDA800B62EDE;
+			remoteInfo = "Duck Hunt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88671D67192EBDA900B62EDE /* Duck Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88671D6A192EBDA900B62EDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88671D6C192EBDA900B62EDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		88671D6E192EBDA900B62EDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88671D70192EBDA900B62EDE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		88671D74192EBDA900B62EDE /* Duck Hunt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Duck Hunt-Info.plist"; sourceTree = "<group>"; };
+		88671D76192EBDA900B62EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88671D78192EBDA900B62EDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88671D7A192EBDA900B62EDE /* Duck Hunt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Duck Hunt-Prefix.pch"; sourceTree = "<group>"; };
+		88671D7B192EBDA900B62EDE /* DuckHuntAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckHuntAppDelegate.h; sourceTree = "<group>"; };
+		88671D7C192EBDA900B62EDE /* DuckHuntAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckHuntAppDelegate.m; sourceTree = "<group>"; };
+		88671D7F192EBDAA00B62EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		88671D82192EBDAA00B62EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		88671D84192EBDAA00B62EDE /* DuckHuntViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckHuntViewController.h; sourceTree = "<group>"; };
+		88671D85192EBDAA00B62EDE /* DuckHuntViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckHuntViewController.m; sourceTree = "<group>"; };
+		88671D87192EBDAA00B62EDE /* DuckHuntMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckHuntMyScene.h; sourceTree = "<group>"; };
+		88671D88192EBDAA00B62EDE /* DuckHuntMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckHuntMyScene.m; sourceTree = "<group>"; };
+		88671D8A192EBDAA00B62EDE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		88671D8C192EBDAA00B62EDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		88671D92192EBDAA00B62EDE /* Duck HuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck HuntTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88671D93192EBDAA00B62EDE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		88671D9B192EBDAB00B62EDE /* Duck HuntTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Duck HuntTests-Info.plist"; sourceTree = "<group>"; };
+		88671D9D192EBDAB00B62EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88671D9F192EBDAB00B62EDE /* Duck_HuntTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Duck_HuntTests.m; sourceTree = "<group>"; };
+		88671DA9192EC3C900B62EDE /* DuckHuntGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntGame.h; sourceTree = "<group>"; };
+		88671DAA192EC3C900B62EDE /* DuckHuntGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntGame.m; sourceTree = "<group>"; };
+		88671DAC192EC43000B62EDE /* DuckHuntLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntLevel.h; sourceTree = "<group>"; };
+		88671DAD192EC43000B62EDE /* DuckHuntLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntLevel.m; sourceTree = "<group>"; };
+		88671DAF192ED2AA00B62EDE /* DuckHuntDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntDog.h; sourceTree = "<group>"; };
+		88671DB0192ED2AA00B62EDE /* DuckHuntDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntDog.m; sourceTree = "<group>"; };
+		88671DB2192ED77200B62EDE /* dogSniff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dogSniff.atlas; sourceTree = "<group>"; };
+		88671DB4192EE03A00B62EDE /* dogJump.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dogJump.atlas; sourceTree = "<group>"; };
+		88671DB6192EF02900B62EDE /* duck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = duck.atlas; sourceTree = "<group>"; };
+		88671DB8192EF55500B62EDE /* DuckHuntDuck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntDuck.h; sourceTree = "<group>"; };
+		88671DB9192EF55500B62EDE /* DuckHuntDuck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntDuck.m; sourceTree = "<group>"; };
+		88671DBB192EF6D500B62EDE /* BIDGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGeometry.h; sourceTree = "<group>"; };
+		88671DBC192F7FFB00B62EDE /* otherDuck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = otherDuck.atlas; sourceTree = "<group>"; };
+		88671DBE192F9D3800B62EDE /* BIDPhysicsCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDPhysicsCategories.h; sourceTree = "<group>"; };
+		88CB8FB41932D859008DBBB6 /* DuckHuntBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntBullet.h; sourceTree = "<group>"; };
+		88CB8FB51932D859008DBBB6 /* DuckHuntBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntBullet.m; sourceTree = "<group>"; };
+		88CB8FB71933FDD8008DBBB6 /* dogDuck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dogDuck.atlas; sourceTree = "<group>"; };
+		88CB8FB91935046D008DBBB6 /* DuckHuntStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntStartScene.h; sourceTree = "<group>"; };
+		88CB8FBA1935046D008DBBB6 /* DuckHuntStartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntStartScene.m; sourceTree = "<group>"; };
+		88CB8FBC1935048A008DBBB6 /* DuckHuntGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckHuntGameOverScene.h; sourceTree = "<group>"; };
+		88CB8FBD1935048A008DBBB6 /* DuckHuntGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuckHuntGameOverScene.m; sourceTree = "<group>"; };
+		88CB8FBF1935122F008DBBB6 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
+		88CB8FC01935122F008DBBB6 /* shot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shot.wav; sourceTree = "<group>"; };
+		88CB8FC31935123B008DBBB6 /* bark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bark.mp3; sourceTree = "<group>"; };
+		88CB8FC519351247008DBBB6 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end.mp3; sourceTree = "<group>"; };
+		88CB8FC619351247008DBBB6 /* duck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = duck.mp3; sourceTree = "<group>"; };
+		88CB8FC719351247008DBBB6 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drop.mp3; sourceTree = "<group>"; };
+		88CB8FCB19351255008DBBB6 /* laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laugh.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88671D64192EBDA800B62EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88671D6D192EBDA900B62EDE /* CoreGraphics.framework in Frameworks */,
+				88671D6F192EBDA900B62EDE /* UIKit.framework in Frameworks */,
+				88671D71192EBDA900B62EDE /* SpriteKit.framework in Frameworks */,
+				88671D6B192EBDA900B62EDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88671D8F192EBDAA00B62EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88671D94192EBDAA00B62EDE /* XCTest.framework in Frameworks */,
+				88671D96192EBDAA00B62EDE /* UIKit.framework in Frameworks */,
+				88671D95192EBDAA00B62EDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88671D5E192EBDA800B62EDE = {
+			isa = PBXGroup;
+			children = (
+				88671D72192EBDA900B62EDE /* Duck Hunt */,
+				88671D99192EBDAA00B62EDE /* Duck HuntTests */,
+				88671D69192EBDA900B62EDE /* Frameworks */,
+				88671D68192EBDA900B62EDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88671D68192EBDA900B62EDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88671D67192EBDA900B62EDE /* Duck Hunt.app */,
+				88671D92192EBDAA00B62EDE /* Duck HuntTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88671D69192EBDA900B62EDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88671D6A192EBDA900B62EDE /* Foundation.framework */,
+				88671D6C192EBDA900B62EDE /* CoreGraphics.framework */,
+				88671D6E192EBDA900B62EDE /* UIKit.framework */,
+				88671D70192EBDA900B62EDE /* SpriteKit.framework */,
+				88671D93192EBDAA00B62EDE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88671D72192EBDA900B62EDE /* Duck Hunt */ = {
+			isa = PBXGroup;
+			children = (
+				88671D7B192EBDA900B62EDE /* DuckHuntAppDelegate.h */,
+				88671D7C192EBDA900B62EDE /* DuckHuntAppDelegate.m */,
+				88671D7E192EBDAA00B62EDE /* Main_iPhone.storyboard */,
+				88671D81192EBDAA00B62EDE /* Main_iPad.storyboard */,
+				88671D84192EBDAA00B62EDE /* DuckHuntViewController.h */,
+				88671D85192EBDAA00B62EDE /* DuckHuntViewController.m */,
+				88CB8FB91935046D008DBBB6 /* DuckHuntStartScene.h */,
+				88CB8FBA1935046D008DBBB6 /* DuckHuntStartScene.m */,
+				88CB8FBC1935048A008DBBB6 /* DuckHuntGameOverScene.h */,
+				88CB8FBD1935048A008DBBB6 /* DuckHuntGameOverScene.m */,
+				88671D87192EBDAA00B62EDE /* DuckHuntMyScene.h */,
+				88671D88192EBDAA00B62EDE /* DuckHuntMyScene.m */,
+				88671DAF192ED2AA00B62EDE /* DuckHuntDog.h */,
+				88671DB0192ED2AA00B62EDE /* DuckHuntDog.m */,
+				88671DB8192EF55500B62EDE /* DuckHuntDuck.h */,
+				88671DB9192EF55500B62EDE /* DuckHuntDuck.m */,
+				88CB8FB41932D859008DBBB6 /* DuckHuntBullet.h */,
+				88CB8FB51932D859008DBBB6 /* DuckHuntBullet.m */,
+				88671DA9192EC3C900B62EDE /* DuckHuntGame.h */,
+				88671DAA192EC3C900B62EDE /* DuckHuntGame.m */,
+				88671DAC192EC43000B62EDE /* DuckHuntLevel.h */,
+				88671DAD192EC43000B62EDE /* DuckHuntLevel.m */,
+				88671DBB192EF6D500B62EDE /* BIDGeometry.h */,
+				88671DBE192F9D3800B62EDE /* BIDPhysicsCategories.h */,
+				88671D8A192EBDAA00B62EDE /* Spaceship.png */,
+				88CB8FC31935123B008DBBB6 /* bark.mp3 */,
+				88CB8FC519351247008DBBB6 /* end.mp3 */,
+				88CB8FC619351247008DBBB6 /* duck.mp3 */,
+				88CB8FC719351247008DBBB6 /* drop.mp3 */,
+				88CB8FCB19351255008DBBB6 /* laugh.mp3 */,
+				88CB8FBF1935122F008DBBB6 /* start.mp3 */,
+				88CB8FC01935122F008DBBB6 /* shot.wav */,
+				88671D8C192EBDAA00B62EDE /* Images.xcassets */,
+				88CB8FB71933FDD8008DBBB6 /* dogDuck.atlas */,
+				88671DBC192F7FFB00B62EDE /* otherDuck.atlas */,
+				88671DB4192EE03A00B62EDE /* dogJump.atlas */,
+				88671DB2192ED77200B62EDE /* dogSniff.atlas */,
+				88671DB6192EF02900B62EDE /* duck.atlas */,
+				88671D73192EBDA900B62EDE /* Supporting Files */,
+			);
+			path = "Duck Hunt";
+			sourceTree = "<group>";
+		};
+		88671D73192EBDA900B62EDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88671D74192EBDA900B62EDE /* Duck Hunt-Info.plist */,
+				88671D75192EBDA900B62EDE /* InfoPlist.strings */,
+				88671D78192EBDA900B62EDE /* main.m */,
+				88671D7A192EBDA900B62EDE /* Duck Hunt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88671D99192EBDAA00B62EDE /* Duck HuntTests */ = {
+			isa = PBXGroup;
+			children = (
+				88671D9F192EBDAB00B62EDE /* Duck_HuntTests.m */,
+				88671D9A192EBDAB00B62EDE /* Supporting Files */,
+			);
+			path = "Duck HuntTests";
+			sourceTree = "<group>";
+		};
+		88671D9A192EBDAB00B62EDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88671D9B192EBDAB00B62EDE /* Duck HuntTests-Info.plist */,
+				88671D9C192EBDAB00B62EDE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88671D66192EBDA800B62EDE /* Duck Hunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88671DA3192EBDAB00B62EDE /* Build configuration list for PBXNativeTarget "Duck Hunt" */;
+			buildPhases = (
+				88671D63192EBDA800B62EDE /* Sources */,
+				88671D64192EBDA800B62EDE /* Frameworks */,
+				88671D65192EBDA800B62EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Duck Hunt";
+			productName = "Duck Hunt";
+			productReference = 88671D67192EBDA900B62EDE /* Duck Hunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88671D91192EBDAA00B62EDE /* Duck HuntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88671DA6192EBDAB00B62EDE /* Build configuration list for PBXNativeTarget "Duck HuntTests" */;
+			buildPhases = (
+				88671D8E192EBDAA00B62EDE /* Sources */,
+				88671D8F192EBDAA00B62EDE /* Frameworks */,
+				88671D90192EBDAA00B62EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88671D98192EBDAA00B62EDE /* PBXTargetDependency */,
+			);
+			name = "Duck HuntTests";
+			productName = "Duck HuntTests";
+			productReference = 88671D92192EBDAA00B62EDE /* Duck HuntTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88671D5F192EBDA800B62EDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DuckHunt;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = iMac;
+				TargetAttributes = {
+					88671D91192EBDAA00B62EDE = {
+						TestTargetID = 88671D66192EBDA800B62EDE;
+					};
+				};
+			};
+			buildConfigurationList = 88671D62192EBDA800B62EDE /* Build configuration list for PBXProject "Duck Hunt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88671D5E192EBDA800B62EDE;
+			productRefGroup = 88671D68192EBDA900B62EDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88671D66192EBDA800B62EDE /* Duck Hunt */,
+				88671D91192EBDAA00B62EDE /* Duck HuntTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88671D65192EBDA800B62EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88671D8B192EBDAA00B62EDE /* Spaceship.png in Resources */,
+				88671D8D192EBDAA00B62EDE /* Images.xcassets in Resources */,
+				88671D83192EBDAA00B62EDE /* Main_iPad.storyboard in Resources */,
+				88CB8FB81933FDD8008DBBB6 /* dogDuck.atlas in Resources */,
+				88671DB3192ED77200B62EDE /* dogSniff.atlas in Resources */,
+				88671DB7192EF02900B62EDE /* duck.atlas in Resources */,
+				88CB8FC21935122F008DBBB6 /* shot.wav in Resources */,
+				88671D80192EBDAA00B62EDE /* Main_iPhone.storyboard in Resources */,
+				88671D77192EBDA900B62EDE /* InfoPlist.strings in Resources */,
+				88CB8FC11935122F008DBBB6 /* start.mp3 in Resources */,
+				88CB8FC819351247008DBBB6 /* end.mp3 in Resources */,
+				88CB8FCA19351247008DBBB6 /* drop.mp3 in Resources */,
+				88CB8FCC19351255008DBBB6 /* laugh.mp3 in Resources */,
+				88CB8FC919351247008DBBB6 /* duck.mp3 in Resources */,
+				88CB8FC41935123B008DBBB6 /* bark.mp3 in Resources */,
+				88671DB5192EE03A00B62EDE /* dogJump.atlas in Resources */,
+				88671DBD192F7FFB00B62EDE /* otherDuck.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88671D90192EBDAA00B62EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88671D9E192EBDAB00B62EDE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88671D63192EBDA800B62EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88671D7D192EBDA900B62EDE /* DuckHuntAppDelegate.m in Sources */,
+				88CB8FBB1935046D008DBBB6 /* DuckHuntStartScene.m in Sources */,
+				88671D79192EBDA900B62EDE /* main.m in Sources */,
+				88CB8FB61932D859008DBBB6 /* DuckHuntBullet.m in Sources */,
+				88671DB1192ED2AA00B62EDE /* DuckHuntDog.m in Sources */,
+				88671DAE192EC43000B62EDE /* DuckHuntLevel.m in Sources */,
+				88671D89192EBDAA00B62EDE /* DuckHuntMyScene.m in Sources */,
+				88CB8FBE1935048A008DBBB6 /* DuckHuntGameOverScene.m in Sources */,
+				88671DAB192EC3C900B62EDE /* DuckHuntGame.m in Sources */,
+				88671DBA192EF55500B62EDE /* DuckHuntDuck.m in Sources */,
+				88671D86192EBDAA00B62EDE /* DuckHuntViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88671D8E192EBDAA00B62EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88671DA0192EBDAB00B62EDE /* Duck_HuntTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88671D98192EBDAA00B62EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88671D66192EBDA800B62EDE /* Duck Hunt */;
+			targetProxy = 88671D97192EBDAA00B62EDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88671D75192EBDA900B62EDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88671D76192EBDA900B62EDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88671D7E192EBDAA00B62EDE /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88671D7F192EBDAA00B62EDE /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		88671D81192EBDAA00B62EDE /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88671D82192EBDAA00B62EDE /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		88671D9C192EBDAB00B62EDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88671D9D192EBDAB00B62EDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88671DA1192EBDAB00B62EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88671DA2192EBDAB00B62EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88671DA4192EBDAB00B62EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Duck Hunt/Duck Hunt-Prefix.pch";
+				INFOPLIST_FILE = "Duck Hunt/Duck Hunt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		88671DA5192EBDAB00B62EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Duck Hunt/Duck Hunt-Prefix.pch";
+				INFOPLIST_FILE = "Duck Hunt/Duck Hunt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		88671DA7192EBDAB00B62EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Duck Hunt.app/Duck Hunt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Duck Hunt/Duck Hunt-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Duck HuntTests/Duck HuntTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		88671DA8192EBDAB00B62EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Duck Hunt.app/Duck Hunt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Duck Hunt/Duck Hunt-Prefix.pch";
+				INFOPLIST_FILE = "Duck HuntTests/Duck HuntTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88671D62192EBDA800B62EDE /* Build configuration list for PBXProject "Duck Hunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88671DA1192EBDAB00B62EDE /* Debug */,
+				88671DA2192EBDAB00B62EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88671DA3192EBDAB00B62EDE /* Build configuration list for PBXNativeTarget "Duck Hunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88671DA4192EBDAB00B62EDE /* Debug */,
+				88671DA5192EBDAB00B62EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88671DA6192EBDAB00B62EDE /* Build configuration list for PBXNativeTarget "Duck HuntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88671DA7192EBDAB00B62EDE /* Debug */,
+				88671DA8192EBDAB00B62EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88671D5F192EBDA800B62EDE /* Project object */;
+}
